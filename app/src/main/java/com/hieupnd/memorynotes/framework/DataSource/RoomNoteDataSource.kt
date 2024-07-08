@@ -1,4 +1,4 @@
-package com.hieupnd.memorynotes.framework
+package com.hieupnd.memorynotes.framework.DataSource
 
 import android.content.Context
 import com.hieupnd.core.data.Note
