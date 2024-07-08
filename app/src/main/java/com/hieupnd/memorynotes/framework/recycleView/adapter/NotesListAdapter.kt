@@ -26,10 +26,9 @@ class NotesListAdapter(var list: MutableList<Note>, val listAction: ListAction) 
     }
 
     fun updateNotes(updateList: List<Note>) {
-        notifyItemRangeRemoved(0, list.size)
         list.clear()
         list = updateList.toMutableList()
-        notifyItemRangeInserted(0, list.size)
+        notifyDataSetChanged()
     }
 
     inner class NoteListViewHolder(val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root) {
